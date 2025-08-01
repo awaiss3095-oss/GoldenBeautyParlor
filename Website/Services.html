@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Beauty Parlor</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Circular Logo */
+        header img {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        header ul li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 40px;
+            gap: 40px;
+            flex-wrap: wrap;
+            background-color: #fff0f5;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f8c8dc;
+        }
+
+        .services div {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Text styling */
+        .services h2 {
+            font-size: 2rem;
+            color: #c2185b;
+            margin-bottom: 15px;
+        }
+
+        .services p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* Image styling */
+        .services img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .services img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.jpg" alt="Logo" height="125">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Service</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="services">
+            <div class="hair">
+                <h2>Hair care</h2>
+                <p>Stylish cuts to luxurious treatments. your perfect hair starts here."
+                    From classic trims to bold transformations, we tailor every haircut to you.
+                    Our professional stylists deliver salon-perfect results every time.
+                    Deep-conditioning, keratin, and protein treatments restore hair health.
+                    Add shine and color with expert highlights, lowlights, or global dye.</p>
+            </div>
+            <div class="hair-img">
+                <img src="Hair.jpg" alt="Service">
+            </div>
+        </section>
+        <section class="services">
+            <div class="skin">
+                <h2>Skin & Facils</h2>
+                <p>Glow naturally with our rejuvenating skin and facial therapies.
+                    We offer facials that cleanse, exfoliate, and deeply nourish your skin.
+                    Target issues like acne, dullness, or aging with our customized care.
+                    Only premium skincare products are used for visible, lasting glow.
+                    Leave with refreshed, smooth, and radiant skin you will love.</p>
+            </div>
+            <div class="skin-img">
+                <img src="skin.jpg" alt="Service">
+            </div>
+        </section>
+        <section class="services">
+            <div class="makup">
+                <h2>Makeup Service</h2>
+                <p>Flawless makeup for every occasion because you deserve to shine."
+                    From subtle day looks to bold bridal glam, we do it all.
+                    Our artists enhance your features with high-quality makeup products.
+                    Perfect for parties, weddings, photoshoots, or any special event.
+                    Step out with confidence, knowing your look is picture-perfect.</p>
+            </div>
+            <div class="makeup-img">
+                <img src="makeup.jpg" alt="Service">
+            </div>
+        </section>
+        <section class="services">
+            <div class="waxing">
+                <h2>Waxing & Threading</h2>
+                <p>Smooth and silky skin with our gentle hair removal services."
+                    We offer full body waxing with minimal discomfort and maximum hygiene.
+                    Threading is precise and ideal for shaping eyebrows or removing facial hair.
+                    We use safe, skin-friendly products to avoid irritation.
+                    Feel confident in your skin with our professional grooming services.</p>
+            </div>
+            <div class="waxing-img">
+                <img src="waxing.jpg" alt="Service">
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <h2>copyrigth &copy All Reserved by Golden Beauty Parlor</h2>
+    </footer>
+</body>
+
+</html>

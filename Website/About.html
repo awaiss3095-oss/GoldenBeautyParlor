@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Beauty Parlor</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Circular Logo */
+        header img {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        header ul li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* About Us Section */
+        .about-us {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 40px;
+            gap: 40px;
+            flex-wrap: wrap;
+            background-color: #fff0f5;
+        }
+
+        .about-us .text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-us .text h2 {
+            font-size: 2.5rem;
+            color: #c2185b;
+            margin-bottom: 20px;
+        }
+
+        .about-us .text p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .about-us .about-img {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-us .about-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-us {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-us .text h2 {
+                font-size: 2rem;
+            }
+
+            .about-us .text p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.jpg" alt="Logo" height="125">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Service</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="about-us">
+            <div class="text">
+                <h2>About Us</h2>
+                <p>Golden Beauty Parlor is a trusted destination for beauty, elegance, and self-care. Our team of
+                    skilled and passionate professionals offers a wide range of services including hair care, skincare,
+                    makeup, and grooming. We use only high-quality and skin-friendly products to ensure a safe and
+                    luxurious experience. Every client is treated with care in a clean, hygienic, and relaxing
+                    environment. Whether it's your big day or just a routine appointment, we aim to make you look and
+                    feel your absolute best. We stay updated with the latest beauty trends and techniques to deliver
+                    modern, stylish results. At Golden Beauty Parlor, your satisfaction is our top priority. We believe
+                    beauty is more than appearance—it's about confidence, comfort, and self-love. Let us help you shine
+                    your brightest.</p>
+            </div>
+            <div class="about-img">
+                <img src="about.jpg" alt="About us">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>copyrigth &copy All Reserved by Golden Beauty Parlor</h2>
+    </footer>
+</body>
+
+</html>
